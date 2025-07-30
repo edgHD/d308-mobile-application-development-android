@@ -6,4 +6,10 @@
     </style>
 
     <style name="Theme.VacationScheduler" parent="Base.Theme.VacationScheduler" />
+
+    <!-- Theme for disabling ActionBar -->
+    <style name="Theme.VacationScheduler.NoActionBar" parent="Theme.VacationScheduler">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
 </resources>
