@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.ExcursionDetails">
+
+    <ScrollView
+        android:id="@+id/excScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF37B"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:text="Title: "
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/excTitleTXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:hint="Excursion Title"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/excDateBtn"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFAE00"
+                    android:onClick="selectDate"
+                    android:text="Excursion Date"
+                    android:textColor="#333"
+                    app:icon="@drawable/outline_calendar_add_on_24"
+                    app:iconTint="#333" />
+
+                <TextView
+                    android:id="@+id/excDateTXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:text="Select Date" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
