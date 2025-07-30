@@ -165,6 +165,10 @@ public class VacationDetails extends AppCompatActivity {
                 Toast.makeText(this, "Please fill in all fields and select dates.", Toast.LENGTH_LONG).show();
                 return true;
             }
+            if (endDate.before(startDate)) {
+                Toast.makeText(this, "End date cannot be before start date.", Toast.LENGTH_LONG).show();
+                return true;
+            }
             if (id == -1) {
                 int newId;
                 if (repository.getAllVacations().isEmpty()) newId = 1;
