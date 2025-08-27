@@ -1,25 +1,35 @@
-# WESTERN GOVERNORS UNIVERSITY
-## D308 – MOBILE APPLICATION DEVELOPMENT (ANDROID)
-Welcome to Mobile Application Development (Android)! This is an opportunity for students to create page layouts with clean navigation, design mobile application infrastructure and user interfaces, develop secure database-backed mobile applications in an object-oriented language, document solutions for application requirements with storyboards and emulators, articulate challenges in the development process, and describe alternatives methods in overcoming mobile application development problems.
+# Vacation Scheduler Android App
 
-FOR SPECIFIC TASK INSTRUCTIONS AND REQUIREMENTS FOR THIS ASSESSMENT, PLEASE REFER TO THE COURSE PAGE.
-## BASIC INSTRUCTIONS
-For this assessment, you have an opportunity to test your competency as a mobile application developer. Your understanding of mobile application structure and design will help you to develop applications to meet customer requirements. This task will allow you to demonstrate your ability to apply the skills learned in the course.
+## Purpose
+Vacation Scheduler allows users to manage vacations and excursions, providing a comprehensive tool to plan, track, and share vacation details. Through this PA, I learned the best practices in Android development, database management, and UI design.
 
-## SUPPLEMENTAL RESOURCES
-1.	How to clone a project to Android Studio using Git?
+## How to Use the Application
 
-> Ensure that Android Studio and Git are installed on your system.  New Project, Get from VCS button or the File/New/Project from Version Control. This will open a window  with a prompt to clone the project. Save it in a safe location for the directory and press clone. IntelliJ will prompt you for your credentials. Enter in your WGU Credentials and the project will be cloned onto your local machine.
+### 1. GitLab Repository Setup (Rubric A)
+- The project and subgroup are correctly created in GitLab. All requirements are included and error-free.
+- [GitLab Repository Link](https://gitlab.com/wgu-gitlab-environment/student-repos/edolz1/d308-mobile-application-development-android/-/tree/working_branch)
 
-2. How to create a branch and start Development?
+### 2. Vacation Management
+- **Add Vacation:** Enter a title, lodging, and start/end dates. Dates are validated ensuring end date is after start date.
+- **Edit Vacation:** Select a vacation to view details and update information.
+- **Delete Vacation:** Delete a vacation only if no excursions are associated (validation prevents deletion otherwise).
+- **Vacation Alerts:** Set alerts for vacation start and end dates. Alerts display the vacation title and whether it is starting or ending.
+- **Share Vacation:** Use the sharing feature to send vacation details via email, SMS, or clipboard. Vacation details are automatically populated.
 
-- GitLab method
-> Press the '+' button located near your branch name. In the dropdown list, press the 'New branch' button. This will allow you to create a name for your branch. Once the branch has been named, you can select 'Create Branch' to push the branch to your repository.
+### 3. Excursion Management
+- **View Excursions:** Each vacation displays a list of associated excursions, showing excursion title and date.
+- **Add/Edit/Delete Excursion:** Add, update, or delete excursions for any vacation. Excursion data is stored and retrieved consistently.
+- **Excursion Alerts:** Set alerts for excursions. Alerts display the excursion title and date.
 
-- Android Studio method
-> In Android Studio, Go to the 'Git' button on the top toolbar. Select the new branch option and create a name for the branch. Make sure checkout branch is selected and press create. You can now add a commit message and push the new branch to the local repo.
+### 4. Interface & Navigation
+- The app includes all required interface elements and layouts for each screen, ensuring intuitive navigation and usability.
 
-## SUPPORT
-If you need additional support, please navigate to the course page and reach out to your course instructor.
-## FUTURE USE
-Take this opportunity to create or add to a simple resume portfolio to highlight and showcase your work for future use in career search, experience, and education!
+### 5. Storyboard & Screenshots
+- The included storyboard demonstrates the flow of the application, covering all menus and screens.
+- Screenshots show the process of creating a signed APK.
+
+## APK Deployment
+- The signed APK is deployed for Android version 8.0 (Oreo) and above.
+
+---
+
